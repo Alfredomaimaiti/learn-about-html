@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+<body>
+    <br / id="back">
+    <h4>表格标签格式：</h4>
+    <br />
+    table
+    <br />
+    &nbsp;&nbsp;tr
+    <br />
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;td 单元格文字 /td
+    <br />
+    &nbsp;&nbsp;/tr
+    <br />
+    /table
+    <br />
+    <h4>以下是一个表格</h4>
+    <table>
+        <tr>
+            <td>姓名</td> <td>性别</td> <td>年龄</td>
+        </tr>
+        <tr>
+            <td>聂临风</td> <td>男</td> <td>19</td>
+        </tr>
+    </table>
+    <br />
+    <h4>其中表头的单元格比较重要，可以用th（table head）表示</h4>
+    <h4>用了th表头会加粗居中</h4>
+    <br />
+    <table>
+        <tr>
+            <th>姓名</th> <th>性别</th> <th>年龄</th>
+        </tr>
+        <tr>
+            <td>聂临风</td> <td>男</td> <td>19</td>
+        </tr>
+    </table>
+    <br />
+    <h3>表格属性</h3>
+    <img src="images/表格属性.jpg">
+    <br />
+    <h4>这些属性要写到表格标签table,tr等里面去</h4>
+    <br />
+    <table border="1" cellpadding="10" cellspacing="0" width="500" height="250">
+        <tr>
+            <th>姓名</th> <th>性别</th> <th>年龄</th>
+        </tr>
+        <tr align="center">
+            <td>聂临风</td> <td>男</td> <td>19</td>
+        </tr>
+    </table>
+    <br />
+    <h2 align="center">表格案例</h2>
+    <table border="1" cellspacing="0" align="center">
+        <tr>
+            <th>排名</th> <th>关键词</th> <th>趋势</th> <th>今日搜索</th> <th>最近七日</th> <th>相关链接</th>
+        </tr>
+        <tr>
+            <td>1</td> <td>鬼吹灯</td> <td>上</td> <td>345</td> <td>1300</td> <td><a href="https://baike.baidu.com/item/%E9%AC%BC%E5%90%B9%E7%81%AF/23607573#viewPageContent">百科 </a></td>
+        </tr>
+        <tr>
+            <td>2</td> <td>盗墓笔记</td> <td>下</td> <td>315</td> <td>1024</td> <td><a href="https://baike.baidu.com/item/%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0/21859">百科 </a></td>
+        </tr>
+    </table>
+    <br />
+    <h4 align="center">其他的差不多不做了</h4><br />
+
+    <h4>thead用来包含整个表头</h4><br />
+    <h4>tbody用来包含整个表格下部分</h4><br />
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>排名</th> 
+                <th>关键词</th> 
+                <th>趋势</th> 
+                <th>今日搜索</th> 
+                <th>最近七日</th> 
+                <th>相关链接</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td> <td>鬼吹灯</td> <td>上</td> <td>345</td> <td>1300</td> <td><a href="https://baike.baidu.com/item/%E9%AC%BC%E5%90%B9%E7%81%AF/23607573#viewPageContent">百科 </a></td>
+            </tr>
+            <tr>
+                <td>2</td> <td>盗墓笔记</td> <td>下</td> <td>315</td> <td>1024</td> <td><a href="https://baike.baidu.com/item/%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0/21859">百科 </a></td>
+            </tr>
+      
+        </tbody>
+    
+    </table>
+
+    <h4><a href="#back">返回顶部</a></h4>
+    <br />
+    <h4>合并单元格</h4><br />
+    <h4>合并时以左侧，上侧为目标单元格，写上合并方式=合并单元格数量；如：tdcolspan="2" /td ，然后再删除多余单元格</h4>
+    <br />
+    <h4>合并第一行2,3列：</h4><br />
+    <table border="1" cellspacing="0" width="100" height="100">
+        <tr>
+            <th></th>
+            <th colspan="2"></th>
+        
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

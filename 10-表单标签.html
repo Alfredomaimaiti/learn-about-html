@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <h4>完整标签一般由表单域、表单控件（表单元素）、提示信息三个部分</h4>
+    <h4>其中用 form 来表示表单域，以实现用户信息收集和传递</h4>
+    格式：<br />
+    《form action="url地址" method="提交方式" name="表单域名称"》<br />
+    《/form》<br />
+    <img src="images/表单属性.jpg"><br />
+    <h5>这里对这些属性不做多了解，具体在之后学习服务器编程后细讲</h5>
+    <h4>一、表单控件（表单元素）：1.《input》标签用于收集用户信息</h4>
+    格式：《input type="属性值" /》
+    <h4>各种属性值如下：</h4>
+    <img src="images/表单元素属性.jpg" width="500">
+        <h4>input的属性有type和以下几种：</h4>
+        <img src="images/表单元素input属性.JPG">
+
+    <h4>案例：</h4>
+    <form action="demo.php" method="POST" name="表单域1">
+        用户名：&nbsp;<input type="text" value="请输入用户名" maxlength="6"><br />
+        密码：<input type="password" ><br />
+        <h4>name是表单元素名字，以下这个单选按钮必须要有相同name才能实现多选一</h4>
+        <h4>value是表单input元素的值（因此后台人员可以知道输入的内容和选择的选项）</h4>
+        性别：男<input type="radio" name="sex" value="男" checked="checked"> 女<input type="radio" name="sex" value="女"> 私密<input type="radio" name="sex" value="私密"><br />
+        爱好：吃<input type="checkbox"name="hobby"> 喝<input type="checkbox" name="hobby"> 拉<input type="checkbox" name="hobby"> 撒<input type="checkbox" name="hobby"><br />
+        <br />
+        <input type="submit" value="点这里提交"><input type="reset" value="重新填写"><input type="button" value="发送验证码">
+        <br />
+        <input type="file" value="上传头像">
+    </form>
+    <h4>注意事项：1.name和value是每个表单元素应该有的属性值，主要给后台人员查看使用<br />
+    2.单选按钮和复选框要有相同的name<br />
+    3.checked属性规定首次打开页面默认选中，格式：checked="checked"<br />
+    4.maxlength规定了输入字段最大字符长度<br />
+    5.submit可以把form中的元素值都提交给后台<br />
+    6.重置按钮reset可以还原表单元素重新填写<br />
+    7.普通按钮button,后期搭配js使用
+    8.上传文件type="file"</h4>
+    <br />
+    <h4>label用来绑定一个元素，这样可以增加选中元素的区域</h4>
+    <label for="text">用户名：</label><input type="text" id="text"><br />
+    <input type="radio" id="nan" name="sex"> <label for="nan">男</label>
+    <input type="radio" id="nv" name="sex"> <label for="nv">女</label>
+
+    <h4>2.select下拉表单元素：在有多个选项且不想占据过多页面时使用</h4>
+        形式：<br />
+        《select》<br />
+        《option》选项1《/option》<br />
+        《option》选项2《/option》<br />
+        《/select》<br />
+        <h4>案例：</h4>
+        <form>
+            籍贯：
+            <select>
+                <option>北京</option>
+                <option>天津</option>
+                <option>重庆</option>
+                <option>上海</option>
+                <option>省略</option>
+            </select>    
+        </form>
+        <h4>注：可以在option中定义selected="selected"，使得当前option为默认值<br />
+        3.textarea:文本域标签，当用户所需要输入的内容较多可以使用，用于定义多行文本的标签。</h4>
+        <h4>格式：</h4>
+        《textarea name="" id="" cols="30" rows="10"》《/textarea》<br>
+        其中，row和col通常在CSS中修改
+        例子：
+        <form>
+            <textarea rows="3" col="10">textarea两个标签直接可以直接输入内容显示
+            </textarea>
+        </form>
+        
+        <h2>综合案例：</h2>
+        <h4>青春不常在，抓紧谈恋爱</h4>
+        <table>
+            <tr>
+                <td>性别</td>
+                <td>
+                <input type="radio" id="男" name="sex"> <label for="男">男</label>
+
+                <input type="radio" name="sex" id="女"> <label for="女">女</label>
+                </td>
+            </tr>
+            <tr>
+                <td>生日</td>
+                <td>
+                    <input type="text" value="请输入年份"><input type="text" value="请输入月份"><input type="text" value="请输入天日">
+                </td>
+            </tr>
+            <tr>
+                <td>所在地区</td>
+                <td>
+                    <select>
+                        <option>北京</option>
+                        <option>上海</option>
+                        <option>天津</option>
+                        <option selected="selected">重庆</option>
+                        <option>省略</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>婚姻状况</td>
+                <td>
+                    未婚<input type="radio" name="marry" checked="checked">离异<input type="radio" name="marry">丧偶<input type="radio" name="marry">
+                </td>
+            </tr>
+            <tr>
+                <td>学历</td>
+                <td>
+                    <select>
+                        <option>幼儿园</option>
+                        <option>小学到高中</option>
+                        <option>大专生</option>
+                        <option>本科生</option>
+                        <option>不想写了省略生</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>自我介绍</td>
+                <td>
+                    <textarea rows="3" col="20">输入自我介绍</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="免费注册">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" checked="checked">同意关于<a href="https://china.findlaw.cn/info/hy/jiehun/jiehuntiaojian/1433662.html" target="_balnk"><ins>巴拉巴拉</ins></a>的条款
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="#">已经注册？点这里</a>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <h4>我承诺</h4>
+                    <ul>
+                        <li>年满18，单身</li>
+                        <li>抱着严肃态度</li>
+                        <li>不欺骗感情，真诚寻找另一半</li>
+                </td>
+            </tr>
+            <tr>
+        </table>
+</body>
+</html>

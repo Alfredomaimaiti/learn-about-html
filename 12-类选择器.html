@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类选择器</title>
+    <style>
+        .green{
+            color: green;
+        }
+        .pink{
+            color: pink;
+        }
+        .purple{
+            color: purple;
+        }
+        .fontlarge{
+            font-size: large;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            font-size: large;
+        }
+        .backgroundred{
+            background-color: red;
+        }
+        .backgroundgreen{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h4>类标签可以差异化选择不同标签，选一个或者几个标签可以使用类标签</h4>
+    <h2>是开发最常用的选择器</h2>
+    <h4>类选择器格式：样式点定义，结构类（class）调用</h4>
+    .类名{
+        属性1: 属性值1;<br>
+        属性2: 属性值2;
+    }<br />
+    使用类名则用class，如《div class="类名"》变色《/div》
+    <ul>
+        <li class="green">绿一麟</li>
+        <li class="pink">粉一麟</li>
+        <li class="purple">gay一麟</li>
+    </ul>
+    <h4>多类名使用：在class后面接多个类名，中间用空格隔开《div class="类名1 类名2"》内容《/div》</h4>
+    <div class="green fontlarge">大绿刘一麟</div>
+    <h4>案例：画格子</h4>
+    <div class="box backgroundred">红色</div>
+    <div class="box backgroundgreen">绿色</div>
+    <div class="box backgroundred">红色</div>
+
+</body>
+</html>
