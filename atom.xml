@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>learn about html</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-02-21T06:15:27.393Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>post</title>
+    <link href="http://example.com/2021/02/21/post/"/>
+    <id>http://example.com/2021/02/21/post/</id>
+    <published>2021-02-21T06:08:54.000Z</published>
+    <updated>2021-02-21T06:15:27.393Z</updated>
+    
+    <content type="html"><![CDATA[<p>通过hexo建立的文章</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;通过hexo建立的文章&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="other" scheme="http://example.com/categories/other/"/>
+    
+    
+    <category term="post" scheme="http://example.com/tags/post/"/>
+    
+  </entry>
+  
+</feed>
