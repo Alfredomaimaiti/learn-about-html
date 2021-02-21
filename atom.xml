@@ -3,11 +3,11 @@
   <title>learn about html</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://github.com/Alfredomaimaiti/learn-about-html.git/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://github.com/Alfredomaimaiti/learn-about-html.git/"/>
   <updated>2021-02-21T06:15:27.393Z</updated>
-  <id>http://example.com/</id>
+  <id>https://github.com/Alfredomaimaiti/learn-about-html.git/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>post</title>
-    <link href="http://example.com/2021/02/21/post/"/>
-    <id>http://example.com/2021/02/21/post/</id>
+    <link href="https://github.com/Alfredomaimaiti/learn-about-html.git/2021/02/21/post/"/>
+    <id>https://github.com/Alfredomaimaiti/learn-about-html.git/2021/02/21/post/</id>
     <published>2021-02-21T06:08:54.000Z</published>
     <updated>2021-02-21T06:15:27.393Z</updated>
     
@@ -34,10 +34,10 @@
     
     
     
-    <category term="other" scheme="http://example.com/categories/other/"/>
+    <category term="other" scheme="https://github.com/Alfredomaimaiti/learn-about-html.git/categories/other/"/>
     
     
-    <category term="post" scheme="http://example.com/tags/post/"/>
+    <category term="post" scheme="https://github.com/Alfredomaimaiti/learn-about-html.git/tags/post/"/>
     
   </entry>
   
